@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import Link from "gatsby-link";
 
 export default class extends React.Component {
 
@@ -12,18 +13,20 @@ export default class extends React.Component {
     })
   }
 
-  componentDidMount() {
-    this.timer = setInterval(this.increment, 1500);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
+  // componentDidMount() {
+  //   this.timer = setInterval(this.increment, 1500);
+  // }
+  //
+  // componentWillUnmount() {
+  //   clearInterval(this.timer);
+  // }
 
   render() {
     return (<div>
         <h1>TEST</h1>
+        <button onClick={this.increment} type="button">+1</button>
         <p>{this.state.counter}</p>
+        <Link to="/about">About</Link>
       </div>);
   }
 }
