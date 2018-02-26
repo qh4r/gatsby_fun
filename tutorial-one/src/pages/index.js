@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import {Container} from "../components/container/container.component.js";
 
 export default class extends React.Component {
 
@@ -22,11 +23,11 @@ export default class extends React.Component {
   // }
 
   render() {
-    return (<div>
+    return (<Container>
         <h1>TEST</h1>
         <button onClick={this.increment} type="button">+1</button>
         <p>{this.state.counter}</p>
         <Link to="/about">About</Link>
-      </div>);
+      </Container>);
   }
 }
