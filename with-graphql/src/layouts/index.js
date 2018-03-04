@@ -3,9 +3,9 @@ import g from "glamorous";
 import { css } from "glamor";
 import Link from "gatsby-link";
 
+// rhytym is a function declared by typography js
 import { rhythm } from "../utils/typography";
 
-console.log(rhythm);
 const linkStyle = css({ float: `right` });
 
 export default ({ children, data }) => (
